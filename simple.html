@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <style>
+                body{
+                    background-color: white;
+                    color: black;
+                    font-family: Arial, sans-serif;
+                    transition:background-color 0.3s,color 0.3s;
+                    padding:20px;
+                
+                }
+                .dark-mode{
+                    background-color:#222;
+                    color: #eee;
+
+                }
+                .toggle-button {
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+
+                }
+                .toggle-button:hover{
+                    background-color: #444;
+                }
+
+                </style>
+                </head>
+                <body>
+
+                    <h1>helloworld</h1>
+                    <p>this is a simple page to test dark/light mode toggle.</p>
+                    <button class="toggle-button" onClick="toggleMode()">Toggle dark/light mode</button>
+                    <script>
+                        function toggleMode(){
+                            document.body.classList.toggle("dark-mode");
+                        }
+                        </script>
+                        </body>
+    </html>
